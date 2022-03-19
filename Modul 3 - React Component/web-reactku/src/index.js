@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Test from './Test';
+import HelloComponent from './component/HelloComponent';
 import reportWebVitals from './reportWebVitals';
 
-const Hello = () => {
-  return <p>Hello</p>
-}
+// const Hello = () => {
+//   return <p>Hello</p>
+// }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -16,6 +17,26 @@ ReactDOM.render(<Hello />, document.getElementById('root'));
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
+
+// function HelloComponent() {
+//   return <p>HelloComponent</p>
+// }
+
+// const HelloComponent = () => {
+//   return <p>HelloComponent</p>
+// }
+
+// class StateFullComponent extends React.Component{
+//   render() {
+//     return<p>StateFullComponent</p>
+//   }
+// }
+
+// ReactDOM.render(<Hello />, document.getElementById('root'));
+// ReactDOM.render(<HelloComponent />, document.getElementById('root'));
+// ReactDOM.render(<StateFullComponent />, document.getElementById('root'));
+// ReactDOM.render(<Test />, document.getElementById('root'));
+ReactDOM.render(<HelloComponent />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
