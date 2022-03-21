@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import Parameter from './Parameter';
 import Nesting from './Nesting';
 import Redirect from './Redirect';
+import AppTugas from './AppTugas';
 
 // const Hello = () => {
 //   return <p>Hello</p>
@@ -45,10 +46,11 @@ import Redirect from './Redirect';
 // ReactDOM.render(<HelloComponent />, document.getElementById('root'));
 // ReactDOM.render(<BlogPost />, document.getElementById('root'));
 // ReactDOM.render(<BlogPostMahasiswa />, document.getElementById('root'));
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<Parameter />, document.getElementById('root'));
 // ReactDOM.render(<Nesting />, document.getElementById('root'));
 // ReactDOM.render(<Redirect />, document.getElementById('root'));
+ReactDOM.render(<AppTugas />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
