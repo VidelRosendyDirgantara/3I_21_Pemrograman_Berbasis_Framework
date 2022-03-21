@@ -1,0 +1,35 @@
+.login {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.cancel {
+    background-color: red;
+    padding: 10px 15px;
+    color: white;
+    margin: 40px;
+
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.card-body {
+    border: 1px solid black;
+}
