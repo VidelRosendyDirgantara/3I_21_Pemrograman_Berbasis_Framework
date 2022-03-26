@@ -1,0 +1,23 @@
+.worldStats-box {
+    height: 100%;
+    width: 250px;
+    float: left;
+}
+
+.totalNumbers {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700 !important;
+    font-family: 'Nunito';
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-family: "Nunito";
+}

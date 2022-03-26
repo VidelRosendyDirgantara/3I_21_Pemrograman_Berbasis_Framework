@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './Global.css';
 
+//Import Component
+import WorldStats from '../../component/WorldStats/WorldStats';
+
 class Global extends Component {
     render() {
         return(
@@ -10,7 +13,20 @@ class Global extends Component {
 
                 <div className = "world-stats">
 
-                    {/*Ini akan menampilkan Data*/}
+                    <WorldStats
+                    key="1"
+                    about="Total Case"
+                    total="255.123"/>
+
+                    <WorldStats
+                    key="1"
+                    about="Total Deaths"
+                    total="155.123"/>
+
+                    <WorldStats
+                    key="1"
+                    about="Total Recovered"
+                    total="175.123"/>
 
                 </div>
             </div>
