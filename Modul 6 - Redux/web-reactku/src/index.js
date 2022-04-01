@@ -1,58 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Test from './Test';
-import BlogPost from "./container/BlogPost/BlogPost";
-import HelloComponent from './component/HelloComponent';
-import BlogPostMahasiswa from "./container/BlogPostMahasiswa/BlogPostMahasiswa";
+import "./index.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Parameter from './Parameter';
-import Nesting from './Nesting';
-import Redirect from './Redirect';
-import AppTugas from './AppTugas';
+import { compose, createStore } from "redux";
+import MainReducer from "./reducers/MainReducer";
+import CreateTodo from "./container/CreateTodo";
+import Table from "./container/Table";
 
-// const Hello = () => {
-//   return <p>Hello</p>
-// }
+const store = compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+)(createStore)(MainReducer)
 
+ReactDOM.render(
+<Provider store={store}>
+  <CreateTodo />
+  <Table />
+</Provider>, 
+document.getElementById('root')
+);
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
 
-// function HelloComponent() {
-//   return <p>HelloComponent</p>
-// }
-
-// const HelloComponent = () => {
-//   return <p>HelloComponent</p>
-// }
-
-// class StateFullComponent extends React.Component{
-//   render() {
-//     return<p>StateFullComponent</p>
-//   }
-// }
-
-// ReactDOM.render(<Hello />, document.getElementById('root'));
-// ReactDOM.render(<HelloComponent />, document.getElementById('root'));
-// ReactDOM.render(<StateFullComponent />, document.getElementById('root'));
-// ReactDOM.render(<Test />, document.getElementById('root'));
-// ReactDOM.render(<HelloComponent />, document.getElementById('root'));
-// ReactDOM.render(<BlogPost />, document.getElementById('root'));
-// ReactDOM.render(<BlogPostMahasiswa />, document.getElementById('root'));
-// ReactDOM.render(<App />, document.getElementById('root'));
-// ReactDOM.render(<Parameter />, document.getElementById('root'));
-// ReactDOM.render(<Nesting />, document.getElementById('root'));
-// ReactDOM.render(<Redirect />, document.getElementById('root'));
-ReactDOM.render(<AppTugas />, document.getElementById('root'));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
