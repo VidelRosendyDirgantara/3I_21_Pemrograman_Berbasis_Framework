@@ -24,7 +24,7 @@ class LoaderDemo extends Component {
             mode: 'cors',
             cache: 'default'
         };
-        fetch('http://demo8878412.mockable.io/users/', init)
+        fetch('https://demo1802947.mockable.io/users', init)
             .then((response) => (response.json()))
             .then(
                 (data) => {

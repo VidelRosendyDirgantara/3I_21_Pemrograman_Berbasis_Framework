@@ -4,7 +4,7 @@ import GenericContainer from './GenericContainerHOC.jsx'
 class GenericContainerDemo extends Component {
     render() {
         const ContactListWithGenericContainer = GenericContainer({
-            reqUrl: 'http://demo8878412.mockable.io/users/',
+            reqUrl: 'https://demo1802947.mockable.io/users',
             reqMethod: 'GET',
             resName: 'contacts'
         })(ContactList)
